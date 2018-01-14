@@ -13,10 +13,17 @@ class ViewController: UIViewController {
     //MARK: - IBOutlet section
     @IBOutlet weak var imageView: UIImageView!
     
+    //MARK: - Variable/Constants section
+    var dogsArray = [String]()
+    
+    
+    
     //MARK: - View section
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+        createArrayImages()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,5 +42,14 @@ class ViewController: UIViewController {
     }
     
     //MARK: - Func section
+    
+    func createArrayImages() {
+        
+        for i in 0..<7 {
+            
+            dogsArray.append(String(i))
+            
+        }
+    }
 }
 
