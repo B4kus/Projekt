@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     //MARK: - Variable/Constants section
     var dogsArray = [String]()
-    
+    var indexArray = 0
     
     
     //MARK: - View section
@@ -33,12 +33,31 @@ class ViewController: UIViewController {
 
     //MARK: - View section
     @IBAction func leftArrowButton(_ sender: Any) {
+        
+        if indexArray > 0 {
+            
+            indexArray -= 1
+            let index = dogsArray[indexArray]
+            let imageDogs = UIImage(named: index)
+            imageView.image = imageDogs
+            
+        }
     }
     
     @IBAction func heartButton(_ sender: Any) {
+        
     }
     
     @IBAction func rightArrowButton(_ sender: Any) {
+        
+        if indexArray < dogsArray.count - 1 {
+            
+            indexArray += 1
+            let index = dogsArray[indexArray]
+            let imageDogs = UIImage(named: index)
+            imageView.image = imageDogs
+        
+        }
     }
     
     //MARK: - Func section
