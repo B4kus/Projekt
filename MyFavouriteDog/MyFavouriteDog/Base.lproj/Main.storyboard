@@ -31,6 +31,9 @@
                                     <constraint firstAttribute="height" constant="64" id="wDT-Jz-faZ"/>
                                 </constraints>
                                 <state key="normal" image="like"/>
+                                <connections>
+                                    <action selector="heartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYW-ss-eSQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAf-yA-IzP">
                                 <rect key="frame" x="295" y="512" width="64" height="64"/>
@@ -39,8 +42,11 @@
                                     <constraint firstAttribute="height" constant="64" id="mC7-Ae-Rb3"/>
                                 </constraints>
                                 <state key="normal" image="arrow-point-to-right"/>
+                                <connections>
+                                    <action selector="rightArrowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2oH-ak-9xh"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qm1-qp-ii3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Qm1-qp-ii3">
                                 <rect key="frame" x="16" y="64" width="343" height="366"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="PII-zh-YC2"/>
@@ -54,6 +60,9 @@
                                     <constraint firstAttribute="height" constant="64" id="h7u-zU-6v2"/>
                                 </constraints>
                                 <state key="normal" image="arrowhead-thin-outline-to-the-left"/>
+                                <connections>
+                                    <action selector="leftArrowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P4F-V0-c2k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93529318146925888" blue="0.64168209981873847" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -74,6 +83,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home-2" selectedImage="home-2" id="1zT-BG-l29"/>
+                    <connections>
+                        <outlet property="imageView" destination="Qm1-qp-ii3" id="qDo-Pk-lKT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,6 +211,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0gb-Ry-a6i" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J51-5H-8A0">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -214,6 +227,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="0" width="680" height="453"/>
         <image name="arrow-point-to-right" width="64" height="64"/>
         <image name="arrowhead-thin-outline-to-the-left" width="64" height="64"/>
         <image name="home-2" width="32" height="32"/>
