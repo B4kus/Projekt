@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D71C99A2200B885C009D283C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C99A1200B885C009D283C /* SettingViewController.swift */; };
 		D72B7423200B6262002243ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B7422200B6262002243ED /* AppDelegate.swift */; };
 		D72B7425200B6262002243ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B7424200B6262002243ED /* ViewController.swift */; };
 		D72B7428200B6262002243ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72B7426200B6262002243ED /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D71C99A1200B885C009D283C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		D72B741F200B6262002243ED /* MyFavouriteDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavouriteDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72B7422200B6262002243ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D72B7424200B6262002243ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D72B7422200B6262002243ED /* AppDelegate.swift */,
 				D72B7424200B6262002243ED /* ViewController.swift */,
 				D72B7434200B806F002243ED /* FavouriteViewController.swift */,
+				D71C99A1200B885C009D283C /* SettingViewController.swift */,
 				D72B7426200B6262002243ED /* Main.storyboard */,
 				D72B7429200B6262002243ED /* Assets.xcassets */,
 				D72B742B200B6262002243ED /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 				D72B7425200B6262002243ED /* ViewController.swift in Sources */,
 				D72B7435200B806F002243ED /* FavouriteViewController.swift in Sources */,
 				D72B7423200B6262002243ED /* AppDelegate.swift in Sources */,
+				D71C99A2200B885C009D283C /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

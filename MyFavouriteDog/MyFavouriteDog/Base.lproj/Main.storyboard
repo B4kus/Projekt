@@ -131,7 +131,7 @@
         <!--Settings-->
         <scene sceneID="mHQ-jb-ctK">
             <objects>
-                <viewController id="o9y-X3-cjY" sceneMemberID="viewController">
+                <viewController id="o9y-X3-cjY" customClass="SettingViewController" customModule="MyFavouriteDog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qoj-hW-gR1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
