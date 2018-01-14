@@ -10,6 +10,10 @@ import UIKit
 
 class SettingViewController: UIViewController {
     
+    //MAKR: - Constans Seciton
+    let userDef = UserDefaults.standard
+    
+    
     //MARK: - View Section
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,4 +26,14 @@ class SettingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: - IBAction section
+    @IBAction func segmentedController(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func switchBorder(_ sender: Any) {
+        
+        
+    }
 }
