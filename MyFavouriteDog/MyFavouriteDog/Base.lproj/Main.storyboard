@@ -131,7 +131,7 @@
         <!--Settings-->
         <scene sceneID="mHQ-jb-ctK">
             <objects>
-                <viewController id="o9y-X3-cjY" sceneMemberID="viewController">
+                <viewController id="o9y-X3-cjY" customClass="SettingViewController" customModule="MyFavouriteDog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qoj-hW-gR1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,8 +146,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lH9-eq-vLp">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lH9-eq-vLp">
                                 <rect key="frame" x="159" y="381" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchBorder:" destination="o9y-X3-cjY" eventType="valueChanged" id="8Ib-9u-itD"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAs-L9-ZMM">
                                 <rect key="frame" x="102" y="179" width="160" height="35"/>
@@ -176,6 +179,9 @@
                                     <segment title="Blue"/>
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentedController:" destination="o9y-X3-cjY" eventType="valueChanged" id="fQJ-7j-adQ"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.99016648530960083" green="0.93563127517700195" blue="0.64126867055892944" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -203,6 +209,9 @@
                         <viewLayoutGuide key="safeArea" id="Kks-bL-mLe"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings-2" selectedImage="settings-2" id="fGw-nw-RoJ"/>
+                    <connections>
+                        <outlet property="switchButton" destination="lH9-eq-vLp" id="VIt-lw-WBd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hxa-hE-ioq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

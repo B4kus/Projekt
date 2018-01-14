@@ -7,6 +7,7 @@
 //
 
 import UIKit
+var imageBorder = false
 
 class ViewController: UIViewController {
 
@@ -21,8 +22,14 @@ class ViewController: UIViewController {
     /// Save image to memmory
     let userDef = UserDefaults.standard
     
-    
     //MARK: - View section
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        imageBorderSwitch()
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -78,6 +85,22 @@ class ViewController: UIViewController {
             dogsArray.append(String(i))
             
         }
+    }
+    
+    func imageBorderSwitch() {
+        
+        if imageBorder == true {
+            
+            imageView.layer.borderWidth = 5.0
+            imageView.layer.borderColor = UIColor.black.cgColor
+            
+        } else {
+            
+            imageView.layer.borderWidth = 0.0
+            
+        }
+        
+        imageView.layer.cornerRadius = 5.0
     }
 }
 

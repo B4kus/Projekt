@@ -26,6 +26,7 @@ class FavouriteViewController: UIViewController {
         super.viewWillAppear(true)
         
         saveFavouritePicture()
+        imageBorderSwitch()
         
     }
 
@@ -42,6 +43,23 @@ class FavouriteViewController: UIViewController {
         let imageName = "\(indexSaved)"
         let image = UIImage.init(named: imageName)
         favouriteImageView.image = image
+        
+    }
+
+    func imageBorderSwitch() {
+        
+        if imageBorder == true {
+            
+            favouriteImageView.layer.borderWidth = 5.0
+            favouriteImageView.layer.borderColor = UIColor.black.cgColor
+            
+        } else {
+            
+            favouriteImageView.layer.borderWidth = 0.0
+            
+        }
+        
+        favouriteImageView.layer.cornerRadius = 5.0
         
     }
 
