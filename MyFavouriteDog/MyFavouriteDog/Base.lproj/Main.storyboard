@@ -120,6 +120,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Favourite" image="like-2" selectedImage="like-2" id="Nyf-FA-YxN"/>
                     <navigationItem key="navigationItem" id="xpD-C5-CNg"/>
+                    <connections>
+                        <outlet property="favouriteImageView" destination="LX9-fk-LDh" id="FDP-3I-l5z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o32-ei-oDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
