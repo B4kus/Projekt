@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - IBOutlet section
+    @IBOutlet weak var imageView: UIImageView!
+    
+    //MARK: - View section
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //MARK: - View section
+    @IBAction func leftArrowButton(_ sender: Any) {
+    }
+    
+    @IBAction func heartButton(_ sender: Any) {
+    }
+    
+    @IBAction func rightArrowButton(_ sender: Any) {
+    }
+    
+    //MARK: - Func section
 }
 
