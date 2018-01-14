@@ -10,6 +10,9 @@ import UIKit
 
 class SettingViewController: UIViewController {
     
+    //MAKR: - IBOutlet Seciton
+    @IBOutlet weak var switchButton: UISwitch!
+    
     //MAKR: - Constans Seciton
     let userDef = UserDefaults.standard
     
@@ -34,6 +37,15 @@ class SettingViewController: UIViewController {
     
     @IBAction func switchBorder(_ sender: Any) {
         
+        if switchButton.isOn {
+            
+           imageBorder = true
+            
+        } else {
+            
+            imageBorder = false
+            
+        }
         
     }
 }

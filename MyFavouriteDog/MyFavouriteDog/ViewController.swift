@@ -7,6 +7,7 @@
 //
 
 import UIKit
+var imageBorder = false
 
 class ViewController: UIViewController {
 

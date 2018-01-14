@@ -209,6 +209,9 @@
                         <viewLayoutGuide key="safeArea" id="Kks-bL-mLe"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings-2" selectedImage="settings-2" id="fGw-nw-RoJ"/>
+                    <connections>
+                        <outlet property="switchButton" destination="lH9-eq-vLp" id="VIt-lw-WBd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hxa-hE-ioq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
