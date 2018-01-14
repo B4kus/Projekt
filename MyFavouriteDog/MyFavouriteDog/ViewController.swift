@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     //MARK: - Variable/Constants section
     var dogsArray = [String]()
     var indexArray = 0
+    let userDef = UserDefaults.standard
     
     
     //MARK: - View section
@@ -45,6 +46,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func heartButton(_ sender: Any) {
+        
+        userDef.set(indexArray, forKey: "favourite")
         
     }
     
