@@ -12,6 +12,7 @@
 		D72B7428200B6262002243ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72B7426200B6262002243ED /* Main.storyboard */; };
 		D72B742A200B6262002243ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72B7429200B6262002243ED /* Assets.xcassets */; };
 		D72B742D200B6262002243ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72B742B200B6262002243ED /* LaunchScreen.storyboard */; };
+		D72B7435200B806F002243ED /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72B7434200B806F002243ED /* FavouriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D72B7429200B6262002243ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72B742C200B6262002243ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D72B742E200B6262002243ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D72B7434200B806F002243ED /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				D72B7422200B6262002243ED /* AppDelegate.swift */,
 				D72B7424200B6262002243ED /* ViewController.swift */,
+				D72B7434200B806F002243ED /* FavouriteViewController.swift */,
 				D72B7426200B6262002243ED /* Main.storyboard */,
 				D72B7429200B6262002243ED /* Assets.xcassets */,
 				D72B742B200B6262002243ED /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72B7425200B6262002243ED /* ViewController.swift in Sources */,
+				D72B7435200B806F002243ED /* FavouriteViewController.swift in Sources */,
 				D72B7423200B6262002243ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -94,12 +94,12 @@
         <!--Favourite-->
         <scene sceneID="19u-aY-zQ6">
             <objects>
-                <viewController id="J4Y-py-NYF" sceneMemberID="viewController">
+                <viewController id="J4Y-py-NYF" customClass="FavouriteViewController" customModule="MyFavouriteDog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eds-Us-nMq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LX9-fk-LDh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="LX9-fk-LDh">
                                 <rect key="frame" x="16" y="64" width="343" height="366"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="366" id="35k-i0-CTb"/>
@@ -120,6 +120,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Favourite" image="like-2" selectedImage="like-2" id="Nyf-FA-YxN"/>
                     <navigationItem key="navigationItem" id="xpD-C5-CNg"/>
+                    <connections>
+                        <outlet property="favouriteImageView" destination="LX9-fk-LDh" id="FDP-3I-l5z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o32-ei-oDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
