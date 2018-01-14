@@ -14,6 +14,7 @@ class FavouriteViewController: UIViewController {
     @IBOutlet weak var favouriteImageView: UIImageView!
     
     //MARK: - Constans section
+    /// Save image to memmory
     let userDef = UserDefaults.standard
     
     //MARK: - View section
@@ -34,6 +35,7 @@ class FavouriteViewController: UIViewController {
     }
 
     //MARK: - Func section
+    ///Func saves image to memory. Image will load to favourite after reload of application.
     func saveFavouritePicture() {
         
         let indexSaved = userDef.integer(forKey: "favourite")
