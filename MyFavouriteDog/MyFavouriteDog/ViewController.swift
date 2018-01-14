@@ -7,7 +7,10 @@
 //
 
 import UIKit
+
 var imageBorder = false
+var themeYellow:UIColor = UIColor(red: 1.0, green: 0.926, blue: 0.531, alpha: 1.0)
+var themeBlue:UIColor = UIColor(red: 0.449, green: 0.629, blue: 0.824, alpha: 1.0)
 
 class ViewController: UIViewController {
 
@@ -27,6 +30,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(true)
         
         imageBorderSwitch()
+        colorBackgroundChange()
         
     }
     
@@ -101,6 +105,20 @@ class ViewController: UIViewController {
         }
         
         imageView.layer.cornerRadius = 5.0
+    }
+    
+    func colorBackgroundChange() {
+        
+        let themeValue = userDef.integer(forKey: "theme")
+        if themeValue == 0{
+            
+            view.backgroundColor = themeYellow
+            
+        }else{
+            
+            view.backgroundColor = themeBlue
+            
+        }
     }
 }
 

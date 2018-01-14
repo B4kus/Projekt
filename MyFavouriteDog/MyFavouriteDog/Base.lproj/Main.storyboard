@@ -184,7 +184,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="0.99016648530960083" green="0.93563127517700195" blue="0.64126867055892944" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.92571055889129639" blue="0.53115981817245483" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="uAs-L9-ZMM" firstAttribute="top" secondItem="TWB-po-DUa" secondAttribute="bottom" constant="73" id="6zg-aF-Mlv"/>
                             <constraint firstItem="DAj-30-s6R" firstAttribute="top" secondItem="FDm-1c-Env" secondAttribute="bottom" constant="50" id="7e1-Hl-Fxs"/>
@@ -210,6 +210,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings-2" selectedImage="settings-2" id="fGw-nw-RoJ"/>
                     <connections>
+                        <outlet property="segmentedControl" destination="FDm-1c-Env" id="NpO-fO-dnI"/>
                         <outlet property="switchButton" destination="lH9-eq-vLp" id="VIt-lw-WBd"/>
                     </connections>
                 </viewController>

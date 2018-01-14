@@ -12,12 +12,19 @@ class SettingViewController: UIViewController {
     
     //MAKR: - IBOutlet Seciton
     @IBOutlet weak var switchButton: UISwitch!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     //MAKR: - Constans Seciton
     let userDef = UserDefaults.standard
     
     
     //MARK: - View Section
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        themeColorChange()
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +39,17 @@ class SettingViewController: UIViewController {
     //MARK: - IBAction section
     @IBAction func segmentedController(_ sender: Any) {
         
+       let index = segmentedControl.selectedSegmentIndex
+        userDef.set(index, forKey: "theme")
         
+        if index == 0 {
+            
+            view.backgroundColor = themeYellow
+            
+        } else {
+            
+            view.backgroundColor = themeBlue
+        }
     }
     
     @IBAction func switchBorder(_ sender: Any) {
@@ -45,6 +62,21 @@ class SettingViewController: UIViewController {
             
             imageBorder = false
             
+        }
+    }
+
+    //MARK: - Func section
+    func themeColorChange() {
+        
+        let themeValue = userDef.integer(forKey: "theme")
+        if themeValue == 0 {
+            
+            view.backgroundColor = themeYellow
+            
+        }else{
+            
+            view.backgroundColor = themeBlue
+
         }
     }
 }
