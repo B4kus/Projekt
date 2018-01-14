@@ -22,6 +22,7 @@ class SettingViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        themeColorChange()
         
     }
     override func viewDidLoad() {
@@ -49,7 +50,6 @@ class SettingViewController: UIViewController {
             
             view.backgroundColor = themeBlue
         }
-        
     }
     
     @IBAction func switchBorder(_ sender: Any) {
@@ -65,6 +65,18 @@ class SettingViewController: UIViewController {
         }
     }
 
+    //MARK: - Func section
+    func themeColorChange() {
+        
+        let themeValue = userDef.integer(forKey: "theme")
+        if themeValue == 0 {
+            
+            view.backgroundColor = themeYellow
+            
+        }else{
+            
+            view.backgroundColor = themeBlue
 
-
+        }
+    }
 }

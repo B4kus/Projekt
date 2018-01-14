@@ -27,6 +27,7 @@ class FavouriteViewController: UIViewController {
         
         saveFavouritePicture()
         imageBorderSwitch()
+        colorBackgroundChange()
         
     }
 
@@ -61,6 +62,20 @@ class FavouriteViewController: UIViewController {
         
         favouriteImageView.layer.cornerRadius = 5.0
         
+    }
+
+    func colorBackgroundChange() {
+        
+        let themeValue = userDef.integer(forKey: "theme")
+        if themeValue == 0{
+            
+            view.backgroundColor = themeYellow
+            
+        }else{
+            
+            view.backgroundColor = themeBlue
+            
+        }
     }
 
 }
