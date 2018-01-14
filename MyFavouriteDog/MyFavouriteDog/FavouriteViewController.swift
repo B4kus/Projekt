@@ -14,6 +14,7 @@ class FavouriteViewController: UIViewController {
     @IBOutlet weak var favouriteImageView: UIImageView!
     
     //MARK: - Constans section
+    let userDef = UserDefaults.standard
     
     //MARK: - View section
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class FavouriteViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        saveFavouritePicture()
         
     }
 
@@ -31,6 +33,14 @@ class FavouriteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //MARK: - Func section
+    func saveFavouritePicture() {
+        
+        let indexSaved = userDef.integer(forKey: "favourite")
+        let imageName = "\(indexSaved)"
+        let image = UIImage.init(named: imageName)
+        favouriteImageView.image = image
+        
+    }
 
 }

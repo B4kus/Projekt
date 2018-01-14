@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     @IBAction func heartButton(_ sender: Any) {
         
         userDef.set(indexArray, forKey: "favourite")
-        
+    
     }
     
     /// Button action to scroll images to right.
