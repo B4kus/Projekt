@@ -14,8 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     //MARK: - Variable/Constants section
+    /// Creat array for pictures
     var dogsArray = [String]()
+    /// Index of array to assing image
     var indexArray = 0
+    /// Save image to memmory
     let userDef = UserDefaults.standard
     
     
@@ -33,6 +36,7 @@ class ViewController: UIViewController {
     }
 
     //MARK: - View section
+    /// Button action to scroll images to left.
     @IBAction func leftArrowButton(_ sender: Any) {
         
         if indexArray > 0 {
@@ -45,12 +49,14 @@ class ViewController: UIViewController {
         }
     }
     
+    /// Button action to save images to user defaults.
     @IBAction func heartButton(_ sender: Any) {
         
         userDef.set(indexArray, forKey: "favourite")
         
     }
     
+    /// Button action to scroll images to right.
     @IBAction func rightArrowButton(_ sender: Any) {
         
         if indexArray < dogsArray.count - 1 {
@@ -64,7 +70,7 @@ class ViewController: UIViewController {
     }
     
     //MARK: - Func section
-    
+    /// Func creat array for images assets.
     func createArrayImages() {
         
         for i in 0..<7 {
