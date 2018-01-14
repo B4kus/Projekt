@@ -146,7 +146,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lH9-eq-vLp">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lH9-eq-vLp">
                                 <rect key="frame" x="159" y="381" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchBorder:" destination="o9y-X3-cjY" eventType="valueChanged" id="8Ib-9u-itD"/>

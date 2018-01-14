@@ -94,11 +94,9 @@ class ViewController: UIViewController {
             imageView.layer.borderWidth = 5.0
             imageView.layer.borderColor = UIColor.black.cgColor
             
-            
         } else {
             
             imageView.layer.borderWidth = 0.0
-            
             
         }
         

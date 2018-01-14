@@ -46,6 +46,5 @@ class SettingViewController: UIViewController {
             imageBorder = false
             
         }
-        
     }
 }
