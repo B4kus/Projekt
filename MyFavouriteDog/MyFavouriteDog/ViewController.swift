@@ -7,7 +7,10 @@
 //
 
 import UIKit
+
 var imageBorder = false
+var themeYellow:UIColor = UIColor(red: 1.0, green: 0.926, blue: 0.531, alpha: 1.0)
+var themeBlue:UIColor = UIColor(red: 0.449, green: 0.629, blue: 0.824, alpha: 1.0)
 
 class ViewController: UIViewController {
 
