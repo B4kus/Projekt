@@ -7,8 +7,9 @@
 //
 
 import UIKit
-
+///Global veriabale to allow change the border around image
 var imageBorder = false
+/// Gobal variable with background color
 var themeYellow:UIColor = UIColor(red: 1.0, green: 0.926, blue: 0.531, alpha: 1.0)
 var themeBlue:UIColor = UIColor(red: 0.449, green: 0.629, blue: 0.824, alpha: 1.0)
 
@@ -91,6 +92,7 @@ class ViewController: UIViewController {
         }
     }
     
+    /// Func creats border around image
     func imageBorderSwitch() {
         
         if imageBorder == true {
@@ -107,6 +109,7 @@ class ViewController: UIViewController {
         imageView.layer.cornerRadius = 5.0
     }
     
+    /// Func change color of background
     func colorBackgroundChange() {
         
         let themeValue = userDef.integer(forKey: "theme")

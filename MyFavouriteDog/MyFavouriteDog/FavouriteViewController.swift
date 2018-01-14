@@ -47,6 +47,7 @@ class FavouriteViewController: UIViewController {
         
     }
 
+    /// Func creats border around image
     func imageBorderSwitch() {
         
         if imageBorder == true {
@@ -63,7 +64,8 @@ class FavouriteViewController: UIViewController {
         favouriteImageView.layer.cornerRadius = 5.0
         
     }
-
+    
+    /// Func change color of background
     func colorBackgroundChange() {
         
         let themeValue = userDef.integer(forKey: "theme")
@@ -77,5 +79,4 @@ class FavouriteViewController: UIViewController {
             
         }
     }
-
 }

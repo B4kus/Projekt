@@ -17,7 +17,6 @@ class SettingViewController: UIViewController {
     //MAKR: - Constans Seciton
     let userDef = UserDefaults.standard
     
-    
     //MARK: - View Section
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -37,6 +36,7 @@ class SettingViewController: UIViewController {
     }
     
     //MARK: - IBAction section
+    /// Action for changing the color of application.
     @IBAction func segmentedController(_ sender: Any) {
         
        let index = segmentedControl.selectedSegmentIndex
@@ -52,6 +52,7 @@ class SettingViewController: UIViewController {
         }
     }
     
+    /// Action for switch on and off border around image
     @IBAction func switchBorder(_ sender: Any) {
         
         if switchButton.isOn {
