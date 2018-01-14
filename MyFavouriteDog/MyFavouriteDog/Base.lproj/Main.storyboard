@@ -9,6 +9,12 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OriyaSangamMN.ttc">
+            <string>OriyaSangamMN</string>
+            <string>OriyaSangamMN-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
@@ -107,6 +113,85 @@
             </objects>
             <point key="canvasLocation" x="1253.5999999999999" y="133.5832083958021"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="mHQ-jb-ctK">
+            <objects>
+                <viewController id="o9y-X3-cjY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qoj-hW-gR1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWB-po-DUa">
+                                <rect key="frame" x="102" y="71" width="160" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BEv-ux-LTQ"/>
+                                    <constraint firstAttribute="width" constant="160" id="w2C-6a-LBB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lH9-eq-vLp">
+                                <rect key="frame" x="159" y="381" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAs-L9-ZMM">
+                                <rect key="frame" x="102" y="179" width="160" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="t3q-h5-lXM"/>
+                                    <constraint firstAttribute="height" constant="35" id="xzn-3O-2mb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Border" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAj-30-s6R">
+                                <rect key="frame" x="102" y="323" width="160" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Uok-TW-Y5o"/>
+                                    <constraint firstAttribute="height" constant="35" id="eaf-Nw-KQM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FDm-1c-Env">
+                                <rect key="frame" x="102" y="245" width="160" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99016648530960083" green="0.93563127517700195" blue="0.64126867055892944" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="uAs-L9-ZMM" firstAttribute="top" secondItem="TWB-po-DUa" secondAttribute="bottom" constant="73" id="6zg-aF-Mlv"/>
+                            <constraint firstItem="DAj-30-s6R" firstAttribute="top" secondItem="FDm-1c-Env" secondAttribute="bottom" constant="50" id="7e1-Hl-Fxs"/>
+                            <constraint firstItem="Kks-bL-mLe" firstAttribute="trailing" secondItem="TWB-po-DUa" secondAttribute="trailing" constant="113" id="ELQ-mV-gE1"/>
+                            <constraint firstItem="lH9-eq-vLp" firstAttribute="top" secondItem="DAj-30-s6R" secondAttribute="bottom" constant="23" id="Gp0-Ge-xF3"/>
+                            <constraint firstItem="uAs-L9-ZMM" firstAttribute="leading" secondItem="Kks-bL-mLe" secondAttribute="leading" constant="102" id="HXz-8X-MNw"/>
+                            <constraint firstItem="DAj-30-s6R" firstAttribute="leading" secondItem="Kks-bL-mLe" secondAttribute="leading" constant="102" id="Hc9-Aw-rcP"/>
+                            <constraint firstItem="Kks-bL-mLe" firstAttribute="trailing" secondItem="lH9-eq-vLp" secondAttribute="trailing" constant="167" id="Jlb-ni-G0i"/>
+                            <constraint firstItem="FDm-1c-Env" firstAttribute="top" secondItem="uAs-L9-ZMM" secondAttribute="bottom" constant="31" id="Jwd-m6-E0w"/>
+                            <constraint firstItem="TWB-po-DUa" firstAttribute="leading" secondItem="Kks-bL-mLe" secondAttribute="leading" constant="102" id="NrC-8y-7Ca"/>
+                            <constraint firstItem="lH9-eq-vLp" firstAttribute="top" secondItem="DAj-30-s6R" secondAttribute="bottom" constant="23" id="RYa-oZ-sK2"/>
+                            <constraint firstItem="DAj-30-s6R" firstAttribute="top" secondItem="FDm-1c-Env" secondAttribute="bottom" constant="50" id="Sge-MO-5bm"/>
+                            <constraint firstItem="FDm-1c-Env" firstAttribute="leading" secondItem="Kks-bL-mLe" secondAttribute="leading" constant="102" id="U8a-uY-oW4"/>
+                            <constraint firstItem="Kks-bL-mLe" firstAttribute="bottom" secondItem="lH9-eq-vLp" secondAttribute="bottom" constant="206" id="XGx-GR-z4P"/>
+                            <constraint firstItem="Kks-bL-mLe" firstAttribute="trailing" secondItem="FDm-1c-Env" secondAttribute="trailing" constant="113" id="Yba-jI-6Sl"/>
+                            <constraint firstItem="FDm-1c-Env" firstAttribute="top" secondItem="uAs-L9-ZMM" secondAttribute="bottom" constant="31" id="aeR-sh-AZ4"/>
+                            <constraint firstItem="lH9-eq-vLp" firstAttribute="leading" secondItem="Kks-bL-mLe" secondAttribute="leading" constant="159" id="bAb-lp-UIN"/>
+                            <constraint firstItem="TWB-po-DUa" firstAttribute="top" secondItem="Kks-bL-mLe" secondAttribute="top" constant="51" id="cXK-lf-ofJ"/>
+                            <constraint firstItem="Kks-bL-mLe" firstAttribute="trailing" secondItem="DAj-30-s6R" secondAttribute="trailing" constant="113" id="kbb-0x-xVM"/>
+                            <constraint firstItem="Kks-bL-mLe" firstAttribute="trailing" secondItem="uAs-L9-ZMM" secondAttribute="trailing" constant="113" id="o9W-DP-co9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kks-bL-mLe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fGw-nw-RoJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hxa-hE-ioq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013.5999999999999" y="133.5832083958021"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w3Z-ZH-d0q">
             <objects>
@@ -119,6 +204,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6Ar-DL-rOg"/>
                         <segue destination="J4Y-py-NYF" kind="relationship" relationship="viewControllers" id="A1R-bU-ekD"/>
+                        <segue destination="o9y-X3-cjY" kind="relationship" relationship="viewControllers" id="F8d-Lm-Gq8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgj-TC-aKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
